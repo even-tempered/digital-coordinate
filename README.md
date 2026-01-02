@@ -2,6 +2,18 @@
 
 A modern, animated portfolio website with an interactive QR code generator for sharing your professional profile.
 
+## 📱 Quick Access - Scan to Visit Portfolio
+
+<div align="center">
+  
+![QR Code - Scan to Visit Portfolio](qr-code.png)
+
+### 📲 Scan this QR code to visit the live portfolio!
+
+🔗 Or click here: [https://even-tempered.github.io/digital-coordinate/](https://even-tempered.github.io/digital-coordinate/)
+
+</div>
+
 ---
 
 ## 📁 Project Structure
