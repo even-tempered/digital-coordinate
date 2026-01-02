@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Coordinates — QR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at top, #020617, #000);
+      font-family: system-ui, sans-serif;
+    }
+
+    .card {
+      padding: 28px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #22d3ee, #6366f1, #a855f7);
+      box-shadow: 0 40px 100px rgba(0,0,0,0.7);
+    }
+
+    #qr {
+      background: #020617;
+      padding: 18px;
+      border-radius: 18px;
+    }
+
+    .text {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: #c7d2fe;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div id="qr"></div>
+    <div class="text">SCAN TO ENTER</div>
+  </div>
+
+  <script src="https://unpkg.com/qr-code-styling@1.6.0/lib/qr-code-styling.js"></script>
+  <script>
+    new QRCodeStyling({
+      width: 260,
+      height: 260,
+      data: "https://even-tempered.github.io/digital-coordinate/",
+      dotsOptions: {
+        color: "#10b981",
+        type: "rounded"
+      },
+      cornersSquareOptions: {
+        color: "#f59e0b",
+        type: "extra-rounded"
+      },
+      cornersDotOptions: {
+        color: "#8b5cf6"
+      },
+      backgroundOptions: {
+        color: "#020617"
+      }
+    }).append(document.getElementById("qr"));
+  </script>
+
+</body>
+</html>
